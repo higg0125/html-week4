@@ -38,11 +38,15 @@
       <!-- the form tag defines the area of the form- when you submit you submit all info inside that form -->
       <form action="index.html" method="GET">
         <!-- the label and the input are linked - therefore attrubute in the label tag must match the id of the input tag -->
+        <!-- all form fields must have a type a type of attribute (that defines what they are) 
+          and the name attributes (allows the place you send the information to access each field) -->
         <p>
+          <!-- password input field hides the characters the user types -->
         <label for="username">Name:</label>
-        <input id="username">
+        <input id="username" type="text" name="username" placeholder="John Deer">
         </p>
         <p>
+          <!-- some inputs are more than just text, like colour picker -->
           <label for="pass">Password: </label>
           <input id="pass" type="password">
         </p>
