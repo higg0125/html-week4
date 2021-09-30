@@ -56,10 +56,37 @@
         <input id="col" type="color" name="col">
         </p>
        <p>
+         <!-- text area is for mutiple lines of text -->
          <label for="info">Enter the information:</label>
-         <textarea id="info" name="info"></textarea>
+         <textarea id="info" name="info">This is where you type</textarea>
        </p>
-      </form>
+       <p>
+         <!-- drop down menu -->
+         <lable for="fruit">Pick a fruit: </lable>
+         <select id="fruit" name="fruit">
+           <!-- option tags must have value, which is what gets sent with the form -->
+           <option value="default">Pick a fruit</option>
+           <option value="apples">Apples</option>
+           <option value="mangos">Mangos</option>
+           <option value="pears">Pears</option>
+         </select>
+         <h1>What do you like:</h1>
+        <p>
+          <label for="fruit">Apples</label>
+          <input type="checkbox" id="fruit" name="apples">
+        </p> 
+       <p>
+         <!-- radio buttons need to have a matching anme attribute to make them set -->
+         <span>Do you like dogs?</span>
+         <label for="yes">Yes!</label>
+         <input type="radio" id="yes" name="dogs">
+         <label for="no">No!</label>
+         <input type="radio" id="no" name="dogs">
+         <p>
+           <button type="submit" name="SUBMIT!!!!">SUBMIT!</button>
+         </p>
+       </p>
+    </form>
     </main>
     <footer>
         <article>&copy; Somebody, Somewhere, 2021</article>
